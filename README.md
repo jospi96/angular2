@@ -9,7 +9,7 @@ This single page application is developed in angular and it is splited in 2 comp
 
 ## Local installation
 For local installation you will need node.js version 19.0.1 and angular cli.
-1. Install angular material with comand "ng add @angular/material", chose indaco styele end responde yes a "Set up global Angular Material typography styles" "Include the Angular animations module"
+1. Install angular router with comand "ng add @angular/router"
 2. run the ng serve command in the console
 2. enjoy de project in localhost:4200
 
