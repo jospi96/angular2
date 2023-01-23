@@ -18,8 +18,7 @@ constructor(private httpService:HttpService){}
 getCityList(term:string){
 this.httpService.getCityList(term).subscribe((data:any)=>{
   this.cityList=data._embedded['city:search-results']
- 
-  console.log(this.cityList)
+
   
 })}
 
