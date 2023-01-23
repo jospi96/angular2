@@ -1,0 +1,35 @@
+
+<div class="component">
+    
+    <header>
+
+<img src={{imgLink}}
+class="img-fluid" alt="">
+
+</header>
+<div class="input-area">
+<input type="text" #input (input)="getCityList(input.value)"
+ placeholder="Search your city">
+<div>
+<div class="search-result" *ngIf="cityList!=undefined  && input.value!=''">
+    
+    <ul>
+        <li *ngFor="let city of cityList" (click)="getLinkCity(city)" 
+        (click)="input.value=''">{{city.matching_full_name}}</li>
+    </ul>
+</div>
+
+</div>
+</div>
+
+<div class="title" *ngIf="cityData!=undefined && errorSearch==false " >
+<h2>{{citySelected}}</h2>
+<app-chart [data]=cityData></app-chart>
+</div>
+<div class="error" *ngIf="errorSearch">
+<p>We are sorry but dont have information for the selected city, pleas try other
+</p>
+</div>
+
+
+</div>

@@ -1,0 +1,25 @@
+
+<div *ngIf="data!=undefined" >
+<div class="summary" [innerHTML]="data.summary">
+</div>
+
+
+<div class="chart-rating">
+    <div class="city-rating">
+        <h3>City rating</h3>
+        <mat-progress-spinner class="example-margin" color="black" [mode]="mode" [value]="cityRating">
+    
+        </mat-progress-spinner>
+        <p>{{cityRating | number: '1.0-0'}}</p>
+    </div>
+    <div class="more-info"><h2>More info</h2></div>
+<div class="chart">
+    <canvas   class="canva" baseChart [datasets]="chartDataset" [labels]="label" [legend]="false"
+        [options]="{'responsitive':true, 'maintainAspectRatio':true} "></canvas>
+</div>
+
+
+
+
+</div>
+</div>
