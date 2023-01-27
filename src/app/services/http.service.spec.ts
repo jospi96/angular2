@@ -43,6 +43,9 @@ describe('HttpService', () => {
           name: "",
           templated: true
       }],
+     "city:urban_area": {
+          href: ""
+        },
       self:{
           href:""
      
