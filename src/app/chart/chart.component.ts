@@ -9,6 +9,7 @@ import {  cityData } from '../model';
   styleUrls: ['./chart.component.css']
 })
 export class ChartComponent implements OnInit{
+
   @Input() data: cityData | undefined;
   chartDataset:[{}]=[{}]
   label:string []=[]
@@ -34,9 +35,7 @@ export class ChartComponent implements OnInit{
 
     this.cityRating=dataTemp.teleport_city_score
 
-}
-
-
+  }
 }
 
 

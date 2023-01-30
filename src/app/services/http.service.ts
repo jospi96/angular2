@@ -10,18 +10,19 @@ import { cityReponse } from '../model';
 export class HttpService {
 
   constructor(private http:HttpClient) { }
- 
-  getCityData(link:string){
+
+  browseCityData(link:string){
 
     return this.http.get(`${link}`)
 
   }
 
-  getCityList(term:string){
+  browseCityList(term:string){
 
     return this.http.get(`${environment.urlCitySearch}${term}`)
   }
-  getLinkCity(link:string){
+  browseLinkCity(link:string){
+    console.log(link)
     return this.http.get(link)
   }
 }

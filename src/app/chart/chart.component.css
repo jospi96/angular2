@@ -4,7 +4,6 @@
     font-weight: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
-   
 }
 .more-info{
     margin-top: 20px;
@@ -12,10 +11,9 @@
     font-size:1em;
     width: 100%;
     margin:0  auto;
-   
 }
 .more-info h2{
-    
+
 margin: 0 auto;
 }
 
@@ -24,9 +22,9 @@ margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    
-    
-    
+
+
+
 }
 .chart{
     margin-top: 20px;
@@ -38,8 +36,6 @@ margin: 0 auto;
     width: 100%;
     text-align: center;
     align-items: center;
-    
-
 }
 
 .city-rating p{
@@ -50,10 +46,8 @@ margin: 0 auto;
 }
 .example-margin{
     margin: 0 auto;
-   
+
 }
-
-
 
 .canva{
     width: 100% !important;
