@@ -9,12 +9,27 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ChartComponent } from './chart/chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ElectromobilityComponent } from './electromobility/electromobility.component';
+import { AddCoffeeComponent } from './coffee/add-coffee/add-coffee.component';
+import { ListCoffeeComponent } from './coffee/list-coffee/list-coffee.component';
+import { UpdateCoffeeComponent } from './coffee/update-coffee/update-coffee.component';
+import { LoginComponent } from './coffee/login/login.component';
+import { RegisterComponent } from './coffee/register/register.component';
+import { HeaderComponent } from './templates/header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ChartComponent
+    ChartComponent,
+    ElectromobilityComponent,
+    AddCoffeeComponent,
+    ListCoffeeComponent,
+    UpdateCoffeeComponent,
+    LoginComponent,
+    RegisterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     NgChartsModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

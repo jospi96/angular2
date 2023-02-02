@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
@@ -67,13 +68,12 @@
               "browserTarget": "angular2:build:development"
             }
           },
-          "defaultConfiguration": "development",
-         
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular2:build",
+            "browserTarget": "angular2:build"
           }
         },
         "test": {

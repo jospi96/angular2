@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../environment/environment';
 import { cityReponse } from '../model';
+import { IBrewery } from '../interfaces/IBrewery';
 
 
 @Injectable({
@@ -9,18 +10,21 @@ import { cityReponse } from '../model';
 })
 export class HttpService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  browseCityData(link:string){
+  getAllData(){
+    return this.http.get<IBrewery>(environment.baseURL)
+  }
 
+  searchByState(link:string){
     return this.http.get(`${link}`)
-
   }
 
-  browseCityList(term:string){
-
-    return this.http.get(`${environment.urlCitySearch}${term}`)
+  searchByTerm(term:string){
+    const searchURL = 'search?query=';
+    return this.http.get(`${environment.baseURL}${searchURL}${term}`)
   }
+
   browseLinkCity(link:string){
     console.log(link)
     return this.http.get(link)

@@ -195,7 +195,7 @@ body {
 	background: rgba(0, 0, 0, 0.003);
 	box-shadow: inset 0 -5px 10px rgba(0,0,0,0.13);
 }
-
+datalist{ display: block;}
 .main {
 	position: relative;
 	z-index: 2;

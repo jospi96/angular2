@@ -1,60 +1,50 @@
 .summary{
-    margin-top: 10px;
-    font-size: large;
-    font-weight: 5px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .more-info{
-    margin-top: 20px;
-
-    font-size:1em;
-    width: 100%;
-    margin:0  auto;
+  margin-top: 20px;
+  font-size:1em;
+  width: 100%;
+  margin:0  auto;
 }
 .more-info h2{
-
-margin: 0 auto;
+  margin: 0 auto;
 }
-
 .chart-rating{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .chart{
-    margin-top: 20px;
-    margin:0 auto;
-    width: 80%;
+  margin-top: 20px;
+  margin:0 auto;
+  width: 80%;
 }
 .city-rating{
-    padding-top: 5%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
-
 .city-rating p{
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .city-rating h3{
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .example-margin{
-    margin: 0 auto;
-
+  margin: 0 auto;
 }
-
 .canva{
-    width: 100% !important;
-    height: auto!important;
-    aspect-ratio: auto !important;
+  width: 100% !important;
+  height: auto!important;
+  aspect-ratio: auto !important;
 }
-
 mat-progress-spinner{
-    max-width: 50%;
+  max-width: 50%;
 }

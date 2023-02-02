@@ -11,10 +11,12 @@ import {  cityData } from '../model';
 export class ChartComponent implements OnInit{
 
   @Input() data: cityData | undefined;
+
   chartDataset:[{}]=[{}]
   label:string []=[]
   mode: ProgressSpinnerMode = 'determinate';
   cityRating:number=0
+
   ngOnInit(): void {
 
     let dataTemp= this.data ? this.data : {categories:[{score_out_of_10:0, name:"", color:"#000"}
@@ -34,7 +36,6 @@ export class ChartComponent implements OnInit{
     ]
 
     this.cityRating=dataTemp.teleport_city_score
-
   }
 }
 
